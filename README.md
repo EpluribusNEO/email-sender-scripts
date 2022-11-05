@@ -8,7 +8,7 @@
     
     [smtp]
     server=smtp.domen.ru
-    port=465
+    port=465 
     [auth]
     login=username@sevice.ru
     password=1234567890
