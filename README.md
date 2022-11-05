@@ -6,12 +6,12 @@
 1. Создайте в папке проекта файл **config.ini** и отформатируйте его как показано в примере ниже 
 
     
-    [smtp]
-    server=smtp.domen.ru
-    port=465 
-    [auth]
-    login=username@sevice.ru
-    password=1234567890
+    [smtp]  
+    server=smtp.domen.ru  
+    port=465   
+    [auth]  
+    login=username@sevice.ru  
+    password=1234567890  
 
 
 ### Где: 
