@@ -9,6 +9,7 @@ from email.mime.image import MIMEImage
 from email.mime.audio import MIMEAudio
 from email.mime.multipart import MIMEMultipart
 
+# --- <Send Text> -----------------------------------------
 def send_plain_text(auth, server, mail, isdegub=False, encode='utf-8'):
 	charset = f"Content-Type: text/plain; charset={encode}"
 	mime = 'MIME-Version: 1.0'
@@ -33,7 +34,7 @@ def send_plain_text(auth, server, mail, isdegub=False, encode='utf-8'):
 		raise e
 		exit(1)
 
-
+# --- </Send Text> -----------------------------------------
 
 # --- <Send Plain Text and File> ---------------------------
 
@@ -94,7 +95,8 @@ def send_plain_text_and_file(auth, server, mail, path_files):
 	smtp.quit()
 	print("DONE: Text and File have been sent ")
 
-
-
-
 # --- </Send Plain Text and File> ---------------------------
+
+
+if __name__ == '__main__':
+	print("This is the file of the plug-in library (module). \nShould not be used as the main")
